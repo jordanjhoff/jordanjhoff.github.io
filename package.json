@@ -1,0 +1,30 @@
+{
+  "name": "macos-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0",
+    "ts-loader": "^9.4.0",
+    "html-webpack-plugin": "^5.5.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanjhoff/jordanjhoff.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanjhoff/jordanjhoff.github.io/issues"
+  },
+  "homepage": "https://github.com/jordanjhoff/jordanjhoff.github.io#readme",
+  "description": ""
+}

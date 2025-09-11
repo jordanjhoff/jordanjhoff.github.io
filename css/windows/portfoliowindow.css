@@ -1,0 +1,271 @@
+/* Profile Section - Mac OS X Style */
+.profile-section {
+    display: flex;              
+    align-items: center;       
+    gap: 15px;                  
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(180deg, #f5f5f5 0%, #e8e8e8 100%);
+    border: 1px solid #b0b0b0;
+    border-radius: 8px;
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.8),
+        0 1px 3px rgba(0,0,0,0.1);
+}
+
+.profile-image-container {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    box-shadow: 
+        0 1px 0 rgba(255,255,255,0.8),
+        0 2px 5px rgba(0,0,0,0.3),
+        inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.profile-title {
+    font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    color: #555;
+    font-weight: normal;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.about-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%);
+    border: 1px solid #b0b0b0;
+    border-radius: 6px;
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.9),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.about-text {
+    font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Code Section - Mac OS X Terminal Style */
+.code-section {
+    margin-bottom: 20px;
+}
+
+.code-container {
+    background: linear-gradient(180deg, #3a3a3a 0%, #2d2d2d 100%);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #1a1a1a;
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        0 2px 5px rgba(0,0,0,0.3);
+}
+
+.code-header {
+    background: linear-gradient(180deg, #5a5a5a 0%, #3a3a3a 100%);
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a1a1a;
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        0 1px 2px rgba(0,0,0,0.2);
+}
+
+.code-language {
+    font-family: "Lucida Grande", Arial, sans-serif;
+    font-size: 11px;
+    color: #ccc;
+    font-weight: normal;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+.copy-button {
+    background: linear-gradient(180deg, #6a6a6a 0%, #4a4a4a 50%, #3a3a3a 100%);
+    border: 1px solid #2a2a2a;
+    color: #ddd;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-family: "Lucida Grande", Arial, sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.1s;
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.2),
+        0 1px 2px rgba(0,0,0,0.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+.copy-button:hover {
+    background: linear-gradient(180deg, #7a7a7a 0%, #5a5a5a 50%, #4a4a4a 100%);
+    color: #fff;
+}
+
+.copy-button:active {
+    background: linear-gradient(180deg, #3a3a3a 0%, #4a4a4a 50%, #5a5a5a 100%);
+    box-shadow: 
+        inset 0 2px 3px rgba(0,0,0,0.3),
+        0 1px 0 rgba(255,255,255,0.1);
+}
+
+.code-snippet {
+    padding: 12px;
+    overflow-x: auto;
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #d4d4d4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background: #000;
+}
+
+/* Mac OS X Scrollbars */
+.window-content::-webkit-scrollbar {
+    width: 15px;
+    background: #f0f0f0;
+}
+
+.window-content::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #e1e1e1 0%, #f0f0f0 20%);
+    border-left: 1px solid #ccc;
+}
+
+.window-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #c9c9c9 0%, #b0b0b0 50%, #999999 100%);
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.6),
+        inset -1px 0 0 rgba(255,255,255,0.3),
+        inset 1px 0 0 rgba(255,255,255,0.3);
+}
+
+.window-content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #b9b9b9 0%, #a0a0a0 50%, #898989 100%);
+}
+
+.window-content::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, #7d94b8 0%, #6b83aa 50%, #59729c 100%);
+    border-color: #4a5f85;
+}
+
+.code-snippet::-webkit-scrollbar {
+    height: 8px;
+}
+
+.code-snippet::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+}
+
+.code-snippet::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #666 0%, #555 50%, #444 100%);
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.code-snippet::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #777 0%, #666 50%, #555 100%);
+}
+
+/* C# Syntax Highlighting - Terminal Style */
+.code-snippet .keyword {
+    color: #66ccff;  /* Bright blue */
+    font-weight: bold;
+}
+
+.code-snippet .type {
+    color: #40e0d0;  /* Turquoise */
+}
+
+.code-snippet .string {
+    color: #ffa500;  /* Orange */
+}
+
+.code-snippet .property {
+    color: #87ceeb;  /* Sky blue */
+}
+
+.code-snippet .operator {
+    color: #d4d4d4;  /* Light gray */
+}
+
+.code-snippet .comment {
+    color: #7cfc00;  /* Lawn green */
+    font-style: italic;
+}
+
+.code-snippet .number {
+    color: #98fb98;  /* Pale green */
+}
+
+.code-snippet .punctuation {
+    color: #d4d4d4;  /* Gray */
+}
+
+/* Additional Mac OS X styling */
+.window-content {
+    background: #ececec;
+    font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .window {
+        max-width: 100%;
+        border-radius: 0;
+    }
+    
+    .window-content {
+        padding: 15px;
+    }
+    
+    .profile-name {
+        font-size: 18px;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image-container {
+        width: 120px;
+        height: 120px;
+    }
+}
