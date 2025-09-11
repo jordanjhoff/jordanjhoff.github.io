@@ -2,6 +2,7 @@ import { MenuBar } from '../components/MenuBar.js';
 import { Dock } from '../components/Dock.js';
 import { PortfolioWindow } from '../windows/PortfolioWindow.js';
 import { ProjectWindow } from '../windows/ProjectWindow.js';
+import { SkillsWindow } from '../windows/SkillsWindow.js';
 export class WindowManager {
     constructor() {
         this.windows = new Map();
@@ -31,6 +32,7 @@ export class WindowManager {
         this.setupEventListeners();
         setTimeout(() => {
             this.openWindow('projects-window');
+            this.openWindow('skills-window');
             this.openWindow('portfolio-window');
         }, 500);
     }
@@ -96,15 +98,20 @@ export class WindowManager {
     handleDockClick(windowId) {
         const window = this.windows.get(windowId);
         if (!window) {
+            // Window doesn't exist, create it
             this.openWindow(windowId);
         }
-        else if (window.state.isMinimized || !window.isVisible()) {
+        else if (!window.isVisible()) {
+            // Window is hidden, show it and focus
             window.show();
+            window.focus();
         }
         else if (window.state.isActive) {
-            window.close();
+            // Window is active/focused, hide it
+            window.close(); // This hides the window
         }
         else {
+            // Window is visible but not active, focus it
             window.focus();
         }
     }
@@ -122,6 +129,9 @@ export class WindowManager {
                     break;
                 case 'projects-window':
                     window = new ProjectWindow();
+                    break;
+                case 'skills-window':
+                    window = new SkillsWindow();
                     break;
                 default:
                     console.warn(`Unknown window type: ${windowId}`);

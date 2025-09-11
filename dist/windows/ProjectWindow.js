@@ -169,18 +169,14 @@ export class ProjectWindow extends BaseWindow {
             <h3 class="project-title">Homelab System Administration</h3>
             <ul class="project-description">
               <li>Built production Linux server infrastructure on HPE ProLiant DL360p Gen8 hardware, serving 15+ daily users with 99.9% uptime over 2 years.</li>
-              <li>Orchestrated 10+ containerized services using Docker Compose, including Nginx reverse proxy, Jellyfin media server, NextCloud, PostgreSQL databases, and custom web applications.</li>
-              <li>Implemented automated SSL certificate renewal with Let's Encrypt and Nginx, ensuring zero-downtime HTTPS for all services.</li>
-              <li>Configured ZFS storage pools with automated snapshots and off-site backup replication, protecting 4TB+ of user data.</li>
+              <li>Orchestrated 10+ containerized services using Docker Compose, including Nginx reverse proxy, Jellyfin media server, NextCloud, PostgreSQL databases, and most of my custom web applications.</li>
               <li>Built monitoring stack with Prometheus, Grafana, and custom alerting rules for proactive issue detection and resolution.</li>
               <li>Automated deployment pipelines using GitHub webhooks and bash scripts, enabling git-push deployments for multiple projects.</li>
-              <li>Hardened server security with fail2ban, UFW firewall rules, SSH key-only authentication, and regular security updates.</li>
             </ul>
             <div class="project-tech">
-              <span class="tech-tag">Linux (Debian)</span>
+              <span class="tech-tag">Linux (Debian/OMV)</span>
               <span class="tech-tag">Docker/Docker Compose</span>
               <span class="tech-tag">Nginx</span>
-              <span class="tech-tag">ZFS</span>
               <span class="tech-tag">Prometheus/Grafana</span>
             </div>
           </div>

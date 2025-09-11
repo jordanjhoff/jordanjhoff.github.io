@@ -1,0 +1,129 @@
+/* Skills Window - Mac OS X Style */
+.skills-content {
+  height: 100%;
+  background: #ececec;
+  font-family: "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+}
+
+/* Header */
+.skills-header {
+  background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 50%, #d3d3d3 100%);
+  border-bottom: 1px solid #999;
+  padding: 10px 20px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.8),
+    0 1px 2px rgba(0,0,0,0.1);
+}
+
+.skills-header h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+  text-align: center;
+}
+
+/* Table Container */
+.skills-table-container {
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100% - 60px);
+}
+
+/* Mac OS X Style Table */
+.skills-table {
+  width: 100%;
+  background: white;
+  border: 1px solid #999;
+  border-radius: 4px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    0 1px 3px rgba(0,0,0,0.1);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+/* Table Header */
+.skills-table thead tr {
+  background: linear-gradient(180deg, #f0f0f0 0%, #e0e0e0 50%, #d0d0d0 100%);
+  border-bottom: 1px solid #999;
+}
+
+.skills-table th {
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+  border-right: 1px solid #c0c0c0;
+}
+
+.skills-table th:last-child {
+  border-right: none;
+  text-align: center;
+  width: 150px;
+}
+
+/* Table Rows */
+.skills-table tbody tr {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background 0.1s ease;
+}
+
+.skills-table tbody tr:hover {
+  background: linear-gradient(180deg, #e8f0ff 0%, #d0e0ff 100%);
+}
+
+.skills-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Table Cells */
+.skills-table td {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #333;
+  border-right: 1px solid #e0e0e0;
+}
+
+.skills-table td:last-child {
+  border-right: none;
+}
+
+/* Proficiency  */
+.proficiency {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+/* Scrollbar */
+.skills-table-container::-webkit-scrollbar {
+  width: 15px;
+  background: #f0f0f0;
+}
+
+.skills-table-container::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #e1e1e1 0%, #f0f0f0 20%);
+  border-left: 1px solid #ccc;
+}
+
+.skills-table-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #c9c9c9 0%, #b0b0b0 50%, #999999 100%);
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.6),
+    inset -1px 0 0 rgba(255,255,255,0.3),
+    inset 1px 0 0 rgba(255,255,255,0.3);
+}
+
+.skills-table-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #b9b9b9 0%, #a0a0a0 50%, #898989 100%);
+}
