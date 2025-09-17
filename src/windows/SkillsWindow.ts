@@ -85,6 +85,10 @@ export class SkillsWindow extends BaseWindow {
               <td>C / C++</td>
               <td class="proficiency">**</td>
             </tr>
+            <tr>
+              <td>OpenGL</td>
+              <td class="proficiency">**</td>
+            </tr>
           </tbody>
         </table>
       </div>
