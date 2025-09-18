@@ -54,7 +54,7 @@ export class SkillsWindow extends BaseWindow {
             </tr>
             <tr>
               <td>SQL</td>
-              <td class="proficiency">***</td>
+              <td class="proficiency">**</td>
             </tr>
             <tr>
               <td>Linux</td>
@@ -62,14 +62,14 @@ export class SkillsWindow extends BaseWindow {
             </tr>
             <tr>
               <td>Docker / Containers</td>
-              <td class="proficiency">**</td>
+              <td class="proficiency">***</td>
             </tr>
             <tr>
               <td>Git / Version Control</td>
               <td class="proficiency">***</td>
             </tr>
             <tr>
-              <td>TCP/Socket Programming</td>
+              <td>TCP / Socket Programming</td>
               <td class="proficiency">**</td>
             </tr>
             <tr>
@@ -78,6 +78,10 @@ export class SkillsWindow extends BaseWindow {
             </tr>
             <tr>
               <td>C / C++</td>
+              <td class="proficiency">**</td>
+            </tr>
+            <tr>
+              <td>OpenGL</td>
               <td class="proficiency">**</td>
             </tr>
           </tbody>

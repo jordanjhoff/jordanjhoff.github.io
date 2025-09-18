@@ -20,7 +20,7 @@ export class WindowManager {
         const dockLinks = [
             { id: 'dock-github', label: 'GitHub', iconpath: '/assets/github.png', href: 'https://github.com/jordanjhoff' },
             { id: 'dock-linkedin', label: 'LinkedIn', iconpath: '/assets/linkedin.png', href: 'https://www.linkedin.com/in/jordan-hoffman-22b216221/' },
-            { id: 'dock-email', label: 'Email', iconpath: '/assets/mail.png', href: 'mailto:thejayhoffman@email.com' },
+            { id: 'dock-email', label: 'Email', iconpath: '/assets/mail.png', href: 'mailto:hoffmanjayjordan@gmail.com' },
         ];
         this.dock = new Dock(dockItems, dockLinks, this.handleDockClick.bind(this));
     }

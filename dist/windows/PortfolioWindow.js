@@ -41,7 +41,7 @@ export class PortfolioWindow extends BaseWindow {
             <button class="copy-button" onclick="copyCode()">Copy</button>
           </div>
           <pre class="code-snippet"><code><span class="keyword">public</span> <span class="type">Contact</span> <span class="property">Info</span> { <span class="keyword">get</span>; } = <span class="keyword">new</span> <span class="type">Contact</span> {
-    <span class="property">Email</span> = <span class="string">"thejayhoffman@gmail.com"</span>
+    <span class="property">Email</span> = <span class="string">"hoffmanjayjordan@gmail.com"</span>
 };
 
 <span class="keyword">public</span> <span class="type">string</span>[] <span class="property">Interests</span> = {
