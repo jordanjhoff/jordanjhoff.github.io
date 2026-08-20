@@ -1,5 +1,6 @@
 import { BaseWindow } from '../components/BaseWindow.js';
 import { WindowConfig } from '../types/index';
+import { skills } from '../data/skills.js';
 
 export class SkillsWindow extends BaseWindow {
   constructor() {
@@ -23,6 +24,16 @@ export class SkillsWindow extends BaseWindow {
     const content = document.createElement('div');
     content.className = 'skills-content';
     
+    const rows = skills
+      .map(
+        (skill) => `
+            <tr>
+              <td>${skill.name}</td>
+              <td class="proficiency">${'*'.repeat(skill.proficiency)}</td>
+            </tr>`
+      )
+      .join('');
+
     content.innerHTML = `
       <div class="skills-header">
         <h2>Technical Skills</h2>
@@ -36,59 +47,7 @@ export class SkillsWindow extends BaseWindow {
               <th></th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Java</td>
-              <td class="proficiency">***</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td class="proficiency">***</td>
-            </tr>
-            <tr>
-              <td>Django</td>
-              <td class="proficiency">**</td>
-            </tr>
-            <tr>
-              <td>TypeScript / JavaScript</td>
-              <td class="proficiency">**</td>
-            </tr>
-            <tr>
-              <td>React</td>
-              <td class="proficiency">**</td>
-            </tr>
-            <tr>
-              <td>SQL</td>
-              <td class="proficiency">**</td>
-            </tr>
-            <tr>
-              <td>Linux</td>
-              <td class="proficiency">**</td>
-            </tr>
-            <tr>
-              <td>Docker / Containers</td>
-              <td class="proficiency">***</td>
-            </tr>
-            <tr>
-              <td>Git / Version Control</td>
-              <td class="proficiency">***</td>
-            </tr>
-            <tr>
-              <td>TCP / Socket Programming</td>
-              <td class="proficiency">**</td>
-            </tr>
-            <tr>
-              <td>AWS / Cloud</td>
-              <td class="proficiency">*</td>
-            </tr>
-            <tr>
-              <td>C / C++</td>
-              <td class="proficiency">**</td>
-            </tr>
-            <tr>
-              <td>OpenGL</td>
-              <td class="proficiency">**</td>
-            </tr>
+          <tbody>${rows}
           </tbody>
         </table>
       </div>

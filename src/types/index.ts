@@ -83,3 +83,17 @@ export interface BaseWindow extends Component {
   state: WindowState;
   element: HTMLElement;
 }
+
+export interface Skill {
+  name: string;
+  proficiency: number;
+}
+
+export interface Project {
+  title: string;
+  mainImage: string;
+  thumbnails: string[];
+  description: string[];
+  tech: string[];
+  githubUrl?: string;
+}
